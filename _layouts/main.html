@@ -7,13 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{site.title}}</title>
     <link rel="stylesheet" href="{{site.baseurl}}/css/style.css">
+    <script>
+        window.addEventListener('load', function () {
+            document.querySelector('body').classList.add('loaded')
+        })
+    </script>
 </head>
 
 <body>
     <header>
-        <a href="{{site.baseurl}}/">Home</a>
-        <a href="{{site.baseurl}}/about">About</a>
-        <a href="{{site.baseurl}}/contacts">Contacts</a>
+        {% include navigation.html %}
     </header>
     <p>{{site.description}}</p>
 

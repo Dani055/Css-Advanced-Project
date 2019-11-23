@@ -1,0 +1,18 @@
+<nav>
+    {% assign navPages = site.pages | sort:"order" %}
+    <!-- <li class="{% if page.url == '/' %}current-page{% endif %}">
+        <a href="{{site.baseurl}}/">Home</a>
+    </li>
+    <li class="{% if page.url == '/about/' %}current-page{% endif %}" >
+        <a href="{{site.baseurl}}/about">About</a>
+    </li>
+    <li class="{% if page.url == '/contacts/' %}current-page{% endif %}" >
+        <a href="{{site.baseurl}}/contacts">Contacts</a>
+    </li> -->
+    
+    {% for currPage in navPages  %}
+        {% if currPage.title%}
+            <li class="{% if currPage.url == page.url %}current-page{% endif %}"><a href="{{site.baseurl}}{{currPage.url}}">{{currPage.title}}</a></li>
+        {% endif %}  
+    {% endfor %}
+</nav>
