@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ccc;
+}
+
+h3{
+    transform: translate(50vw, 0);
+    opacity: 0;
+    transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+
+    .loaded &{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+nav{
+    a{
+        text-decoration: none;
+        color: aquamarine;
+    
+        @at-root .current-page a{
+            color: green;
+        }
+    }
+}
+
