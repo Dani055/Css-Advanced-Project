@@ -1,3 +1,10 @@
+<a class="logo" href="{{site.baseurl}}/">
+    DDPerformance
+</a>
+<label for="nav-toggle" class="toggle">
+    <span class="open">Open</span>
+    <span class="close"> X Close</span>
+</label>
 <nav>
     {% assign navPages = site.pages | sort:"order" %}
     <!-- <li class="{% if page.url == '/' %}current-page{% endif %}">
@@ -9,10 +16,12 @@
     <li class="{% if page.url == '/contacts/' %}current-page{% endif %}" >
         <a href="{{site.baseurl}}/contacts">Contacts</a>
     </li> -->
-    
-    {% for currPage in navPages  %}
+    <ul>
+        {% for currPage in navPages  %}
         {% if currPage.title%}
-            <li class="{% if currPage.url == page.url %}current-page{% endif %}"><a href="{{site.baseurl}}{{currPage.url}}">{{currPage.title}}</a></li>
-        {% endif %}  
-    {% endfor %}
+        <li class="{% if currPage.url == page.url %}current-page{% endif %}">
+            <a href="{{site.baseurl}}{{currPage.url}}">{{currPage.title}}</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
 </nav>

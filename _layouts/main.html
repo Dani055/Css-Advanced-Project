@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{site.title}}</title>
-    <link rel="stylesheet" href="{{site.baseurl}}/css/style.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/css/site.css">
     <script>
         window.addEventListener('load', function () {
             document.querySelector('body').classList.add('loaded')
@@ -15,8 +15,11 @@
 </head>
 
 <body>
+    <input type="checkbox" class="nav-toggle" id="nav-toggle" />
     <header>
-        {% include navigation.html %}
+        <div class="wrapper">
+                {% include navigation.html %}
+        </div>
     </header>
     <p>{{site.description}}</p>
 

@@ -25,6 +25,9 @@ gulp.task("sass", function() {
 gulp.task("jekyll", function() {
 	return cp.spawn("bundle", ["exec", "jekyll", "build"], { stdio: "inherit", shell: true });
 });
+gulp.task("jekyll-dev", function() {
+	return cp.spawn("bundle", ["exec", "jekyll", "build --baseurl ''"], { stdio: "inherit", shell: true });
+});
 
 gulp.task("watch", function() {
 
@@ -44,10 +47,10 @@ gulp.task("watch", function() {
 			"./_layouts/*.html",
 			"./_posts/**/*.*"
 		]
-	).on('change', gulp.series('jekyll', 'sass') );
+	).on('change', gulp.series('jekyll-dev', 'sass') );
 
 	gulp.watch( 'docs/**/*.html' ).on('change', browserSync.reload );
 	gulp.watch( 'docs/**/*.js' ).on('change', browserSync.reload );
 });
 
-gulp.task("default", gulp.series('jekyll', 'sass', 'watch'));
+gulp.task("default", gulp.series('jekyll-dev', 'sass', 'watch'));
