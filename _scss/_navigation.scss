@@ -5,11 +5,11 @@
     pointer-events: none;
 }
 a.logo{
-    font-size: 20px;
+    font-size: 1.25em;
     font-family: 'Orbitron', sans-serif;
     font-weight: 600;
     text-decoration: none;
-    border-bottom: 2px solid rgba(black, 0.2);
+    border-bottom: 2px solid rgba($color-main, 0.2);
     border-radius: 0.1em;
     transition: border 0.2s ease-in-out;
 
@@ -19,18 +19,14 @@ a.logo{
     }
 }
 header .wrapper{
-    max-width: 75em;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 
     @include bp(phone){
-        padding: 1em 1em;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
     }
 }
 header{
@@ -39,8 +35,8 @@ header{
 
     label{
         color: white;
-        font-size: 18px;
-        margin-top: 1em;
+        font-size: 1.2em;
+        font-weight: 500;
         @include bp(tablet){
             display: none;
         }
@@ -68,21 +64,18 @@ header{
 nav{
     @include bp(phone){
         display: none;
+        flex: 0 0 100%;
         .nav-toggle:checked + header &{
             display: block;
         }
         li{
-            margin: 0.5em;
+            margin: 1em 0 ;
         }
     }
 
     ul{
         @include bp(tablet){
             display: flex;
-            align-items: center;
-        }
-        @include bp(phone){
-            flex-direction: column;
             align-items: center;
         }
         li{
@@ -95,9 +88,9 @@ nav{
     a{
         text-decoration: none;
         padding: 0em 0.6em;
-        margin: 0 0.2em;
-        font-size: 18px;
-        border-bottom: 1.5px solid rgba(black, 0.2);
+        margin: 0 0.4em;
+        font-size: 1.12em;
+        border-bottom: 1.5px solid rgba($color-main, 0.2);
         border-radius: 0.1em;
         transition: border 0.2s ease-in;
 
@@ -108,9 +101,19 @@ nav{
             color: $color-main;
         }
         @at-root .current-page a{
-            font-size: 19.2px;
+            font-size: 1.2em;
         }
     }
     
 }
 
+.fa-home,
+.fa-address-card,
+.fa-phone
+{
+    margin-right: 0.4em;
+}
+.fa-times,
+.fa-list{
+    font-size: 1.7em;
+}

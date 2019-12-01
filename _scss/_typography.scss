@@ -3,6 +3,16 @@
 
 html {
 	font: 16px/1.5 "Fira Sans", Verdana, sans-serif;
+
+	@include bp(phone){
+		font-size: 12px
+	}
+	@include bp(tablet){
+		font-size: 14px;
+	}
+	@include bp(desktop){
+		font-size: 16px;
+	}
 }
 body, button, input, select, option {
 	font: inherit;

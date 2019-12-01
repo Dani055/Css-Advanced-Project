@@ -26,3 +26,6 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - package.json
+  - package-lock.json
+  - gulpfile.js
