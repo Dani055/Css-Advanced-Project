@@ -5,16 +5,24 @@
 @import 'typography';
 @import 'layout';
 
+@import 'banner';
 @import 'navigation';
 
 
-h3{
-    transform: translate(50vw, 0);
-    opacity: 0;
-    transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+.banner{
+    h1{
+        transform: translate(35vw, 0);
 
-    .loaded &{
-        opacity: 1;
-        transform: translate(0,0);
+        .loaded &{
+            transform: translate(0,0);
+        }
     }
+    p{
+        transform: translate(-35vw, 0);
+
+        .loaded &{
+            transform: translate(0,0);
+        }
+    }
+    
 }
