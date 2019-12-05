@@ -1,11 +1,17 @@
 .banner{
     min-height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    .wrapper{
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     &:hover{
         img{
             transform: translate(-50%, -50%) scale(1.05);

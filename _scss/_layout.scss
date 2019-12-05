@@ -1,5 +1,5 @@
 .wrapper{
-    max-width: 75em;
+    max-width: 80em;
     margin: 0 auto;
     padding: 0 2rem;
 }
@@ -9,6 +9,60 @@
     min-height: 100vh;
     main{
         flex-grow: 1;
+    }
+}
+
+.media img{
+    width: 100%;
+    height: auto;
+}
+
+.presentation .wrapper{
+    margin: 3em auto;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+
+    & + &{
+        margin-top: 3em;
+    }
+
+    .media{
+        flex: 0 0 50%;
+        display: flex;
+        align-items: center;
+        
+        @include bp(phone){
+            flex: 0 0 100%;
+        }
+    }
+
+    .content{
+        padding: 2em;
+        flex: 0 0 50%;
+        @include bp(phone){
+            flex: 0 0 100%;
+        }
+        h2{
+            padding: 0;
+            line-height: 1;
+        }
+        span{
+            font-size: 1.6em;
+            padding-bottom: 0.5em;
+            display: block;
+        }
+        p{
+            color: rgba($color-main, 0.7)
+        }
+    }
+    @include bp(tablet){
+        &:nth-child(even){
+            .media{
+                order: 2;
+            }
+        }
     }
 }
 

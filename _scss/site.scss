@@ -5,24 +5,8 @@
 @import 'typography';
 @import 'layout';
 
-@import 'banner';
 @import 'navigation';
+@import 'footer';
+@import 'banner';
+@import 'animations';
 
-
-.banner{
-    h1{
-        transform: translate(35vw, 0);
-
-        .loaded &{
-            transform: translate(0,0);
-        }
-    }
-    p{
-        transform: translate(-35vw, 0);
-
-        .loaded &{
-            transform: translate(0,0);
-        }
-    }
-    
-}

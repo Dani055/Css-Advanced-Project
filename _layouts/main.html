@@ -12,6 +12,7 @@
             document.querySelector('body').classList.add('loaded')
         })
     </script>
+   
     <script src="https://kit.fontawesome.com/8604df3c08.js" crossorigin="anonymous"></script>
 </head>
 
@@ -27,9 +28,9 @@
             {{ content }}
         </main>
         <footer>
-            The footer all right bla bla
+            {% include footer.html %}
         </footer>
     </div>
 </body>
-
+<script src="{{site.baseurl}}/animations.js"></script>
 </html>

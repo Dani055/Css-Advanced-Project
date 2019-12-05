@@ -1,0 +1,60 @@
+footer{
+    background: $background-secondary;
+    color: white;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .col{
+        flex: 0 0 18%;
+        @include bp(phone){
+            flex: 0 0 100%;
+            margin-bottom: 1em;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            li{
+                list-style: none outside;
+                text-align: center;
+            }
+        }
+
+    }
+    .social{
+        display: flex;
+        justify-content: center;
+    }
+    p{
+        flex: 0 0 100%;
+        text-align: center;
+    }
+    a{
+        display: block;
+        padding-bottom: 0.2em;
+        transition: color 0.1s ease-in-out;
+        &:hover{
+            color: $color-main;
+        }
+    }
+    a.logo{
+        padding-bottom: 0.3em;
+        display: block;
+        border: none
+    }
+}
+.fa-facebook,
+.fa-twitter,
+.fa-instagram{
+    font-size: 1.5em;
+    margin: 0 0.5em;
+    &:hover{
+        color: $color-main;
+        cursor: text;
+    }
+}

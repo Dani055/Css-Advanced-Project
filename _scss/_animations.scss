@@ -1,0 +1,48 @@
+.banner{
+    h1{
+        transform: translate(35vw, 0);
+
+        .loaded &{
+            transform: translate(0,0);
+        }
+    }
+    p{
+        transform: translate(-35vw, 0);
+
+        .loaded &{
+            transform: translate(0,0);
+        }
+    }  
+}
+
+@keyframes slide-from-right {
+    0% {
+        transform: translate(25vw, 0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+@keyframes slide-from-left {
+    0% {
+        transform: translate(-25vw, 0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+.card{
+    opacity: 0;
+}
+.animation-right{
+    animation: slide-from-right 0.4s ease-in-out forwards;
+}
+.animation-left{
+    animation: slide-from-left 0.4s ease-in-out forwards;
+}
