@@ -8,7 +8,7 @@ var isInViewport = function (elem) {
     );
 };
 
-var cards = document.getElementsByClassName('card')
+var cards = document.getElementsByClassName('card-presentation')
 window.addEventListener('scroll', function (event) {
     for (let index = 0; index < cards.length; index++) {
         const card = cards[index];
