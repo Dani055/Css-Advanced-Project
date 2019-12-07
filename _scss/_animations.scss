@@ -1,18 +1,31 @@
 .banner{
     h1{
         transform: translate(35vw, 0);
-
+        opacity: 0;
         .loaded &{
             transform: translate(0,0);
+            opacity: 1;
         }
     }
     p{
         transform: translate(-35vw, 0);
-
+        opacity: 0;
         .loaded &{
+            opacity: 1;
             transform: translate(0,0);
         }
     }  
+}
+.banner-small{
+    h2{
+        transform: translate(0, -15vh);
+        opacity: 0;
+        .loaded &{
+            transform: translate(0,0);
+            opacity: 1;
+        }
+    }
+
 }
 
 @keyframes slide-from-right {
@@ -37,12 +50,48 @@
         opacity: 1;
     }
 }
+@keyframes slide-from-top {
+    0% {
+        transform: translate(0, -25vw);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+@keyframes slide-from-bottom {
+    0% {
+        transform: translate(0, +25vw);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
 .card-presentation{
     opacity: 0;
 }
-.animation-right{
+.col{
+    opacity: 0;
+    @for $i from 1 through 4{
+        &:nth-child(#{$i}){
+            animation-delay: $i * 0.1s;
+        }
+    }
+}
+.slide-right{
     animation: slide-from-right 0.4s ease-in-out forwards;
 }
-.animation-left{
+.slide-left{
     animation: slide-from-left 0.4s ease-in-out forwards;
+}
+.slide-top{
+    animation: slide-from-top 0.4s ease-in-out forwards;
+}
+.slide-bottom{
+    animation: slide-from-bottom 0.4s ease-in-out forwards;
 }

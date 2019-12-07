@@ -18,6 +18,7 @@
     display: block;
 }
 
+// PRESENTATION
 .presentation .wrapper{
     margin: 3em auto;
 }
@@ -25,6 +26,7 @@
     display: flex;
     flex-wrap: wrap;
     box-shadow: 0 0 0.3em 0 rgba(0, 0, 0, 0.3);
+    border-radius: 0.3em;
     & + &{
         margin-top: 3em;
     }
@@ -67,6 +69,75 @@
     }
 }
 
+// ABOUT
+.about{
+    background: $background-secondary;
+    color: white;
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2em;
+        padding-bottom: 5em;
+    }
+}
+
+// MAINTENANCE
+.maintenance .wrapper{
+    position: relative;
+    margin-top: -2em;
+    margin-bottom: 2em;
+    background-color:#e1e5ed;
+    padding: 3em;
+    padding-bottom: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.3em;
+}
+
+.col{
+    flex: 0 0 33%;
+    padding: 1em;
+    @include bp(phone){
+        flex: 0 0 100%;
+    }
+    @include bp(tablet){
+        flex: 0 0 50%
+    }
+    @include bp(desktop){
+        flex: 0 0 33.3%;
+    }
+    .maintenance-item{
+        display: flex;
+        min-height: 12em;
+        .icon{
+            flex: 0 0 20%;
+
+            .fa-bolt,
+            .fa-passport,
+            .fa-shield-alt,
+            .fa-calendar-alt{
+                font-size: 3em;
+                margin-top: 0.2em;
+            }
+            .fa-laptop,
+            .fa-money-bill-wave{
+                font-size: 2.5em;
+                margin-top: 0.2em;
+            }
+            
+        }
+        .maintenance-item-content{
+            flex: 0 0 80%;
+        }
+        
+    }
+    .maintenance-item + .maintenance-item{
+        margin-top: 2em;
+    }
+}
+
+// TUNING
 .tuning .wrapper{
     display: flex;
     justify-content: space-between;
@@ -111,6 +182,7 @@
     
 }
 
+// CONTACTS
 .contacts .wrapper{
     display: flex;
     flex-wrap: wrap;
@@ -136,3 +208,4 @@
         border-radius: 0.3em;
     }
 }
+

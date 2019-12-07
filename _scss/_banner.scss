@@ -49,7 +49,7 @@
         z-index: 3;
         position: relative;
         color: rgba(white, 0.5);
-        transition: color 0.2s ease-in-out, transform 0.2s ease-in;;
+        transition: opacity 0.2s ease-in-out, color 0.2s ease-in-out, transform 0.2s ease-in;;
     }
 }
 
@@ -97,6 +97,6 @@
         z-index: 3;
         position: relative;
         color: rgba(white, 0.5);
-        transition: color 0.2s ease-in-out, transform 0.2s ease-in;;
+        transition: opacity 0.2s ease-in, color 0.2s ease-in-out, transform 0.2s ease-in;;
     }
 }

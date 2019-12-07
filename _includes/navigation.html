@@ -8,11 +8,8 @@
 <nav>
     <ul>
         {% assign navPages = site.pages | sort:"order" %}
-        <!-- <li class="{% if page.url == '/' %}current-page{% endif %}">
+        <li class="{% if page.url == '/' %}current-page{% endif %}">
             <a href="{{site.baseurl}}/"><i class="fas fa-home"></i>Home</a>
-        </li> -->
-        <li class="{% if page.url == '/about/' %}current-page{% endif %}">
-            <a href="{{site.baseurl}}/about"><i class="far fa-address-card"></i>About</a>
         </li>
         <li class="{% if page.url == '/tuning/' %}current-page{% endif %}">
             <a href="{{site.baseurl}}/tuning"><i class="fas fa-tachometer-alt"></i>Tuning</a>

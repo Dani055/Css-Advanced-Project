@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Css Advanced Project</title>
-    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/Css-Advanced-Project/css/site.css">
     <script>
         window.addEventListener('load', function () {
             document.querySelector('body').classList.add('loaded')
@@ -21,7 +21,7 @@
         <input type="checkbox" class="nav-toggle" id="nav-toggle" />
         <header>
             <div class="wrapper">
-                <a class="logo" href="/">
+                <a class="logo" href="/Css-Advanced-Project/">
     DDPerformance
 </a>
 <label for="nav-toggle" class="toggle">
@@ -31,20 +31,17 @@
 <nav>
     <ul>
         
-        <!-- <li class="current-page">
-            <a href="/"><i class="fas fa-home"></i>Home</a>
-        </li> -->
-        <li class="">
-            <a href="/about"><i class="far fa-address-card"></i>About</a>
+        <li class="current-page">
+            <a href="/Css-Advanced-Project/"><i class="fas fa-home"></i>Home</a>
         </li>
         <li class="">
-            <a href="/tuning"><i class="fas fa-tachometer-alt"></i>Tuning</a>
+            <a href="/Css-Advanced-Project/tuning"><i class="fas fa-tachometer-alt"></i>Tuning</a>
         </li>
         <li class="">
-            <a href="/gallery"><i class="far fa-images"></i>Gallery</a>
+            <a href="/Css-Advanced-Project/gallery"><i class="far fa-images"></i>Gallery</a>
         </li>
         <li class="">
-            <a href="/contacts"><i class="fas fa-phone"></i>Contacts</a>
+            <a href="/Css-Advanced-Project/contacts"><i class="fas fa-phone"></i>Contacts</a>
         </li>
 
         <!-- 
@@ -54,27 +51,22 @@
         
         
         <li class="current-page">
-            <a href="/">Home</a></li>
+            <a href="/Css-Advanced-Project/">Home</a></li>
         
         
         
         <li class="">
-            <a href="/about/">About</a></li>
+            <a href="/Css-Advanced-Project/tuning/">Tuning</a></li>
         
         
         
         <li class="">
-            <a href="/tuning/">Tuning</a></li>
+            <a href="/Css-Advanced-Project/gallery/">Gallery</a></li>
         
         
         
         <li class="">
-            <a href="/gallery/">Gallery</a></li>
-        
-        
-        
-        <li class="">
-            <a href="/contacts/">Contacts</a></li>
+            <a href="/Css-Advanced-Project/contacts/">Contacts</a></li>
         
          -->
     </ul>
@@ -82,20 +74,21 @@
             </div>
         </header>
         <main>
-            <div class="banner">
+            <section class="banner">
     <div class="wrapper">
-        <img src="/images/0371.jpg" alt="">
+        <img src="/Css-Advanced-Project/images/0371.jpg" alt="">
         <h1>Performance at its finest</h1>
         <p>tam neshto
             xddddddd
         </p>
     </div>
-</div>
-<div class="presentation">
+</section>
+
+<section class="presentation">
     <div class="wrapper">
         <div class="card-presentation">
             <div class="media">
-                <img src="/images/brz_min.jpg" alt="">
+                <img src="/Css-Advanced-Project/images/brz_min.jpg" alt="">
             </div>
             <div class="content">
                 <h2>Your car.</h2>
@@ -118,7 +111,7 @@
         </div>
         <div class="card-presentation">
             <div class="media">
-                <img src="/images/brz_min.jpg" alt="">
+                <img src="/Css-Advanced-Project/images/brz_min.jpg" alt="">
             </div>
             <div class="content">
                 <h2>Your car.</h2>
@@ -128,40 +121,118 @@
             </div>
         </div>
     </div>
-</div>
+</section>
+
+<section class="about">
+    <div class="wrapper">
+            <h3>About us</h3>
+            <p>DDPerformance is a car tuner and maintenance located in Bulgaria and is soon rolling out to more countries. DDPerformance has combined European tuning elements, creating the distinct style for all cars. Starting off as a small countryside body-shop in Plovdiv, DDPerformance's cars are now a common sight on both the streets and racing circuits all across the world</p>
+    </div>
+</section>
+
+<section class="maintenance">
+    <div class="wrapper">
+        <div class="col">
+            <div class="maintenance-item">
+                <div class="icon">
+                    <i class="far fa-calendar-alt"></i>
+                </div>
+                <div class="maintenance-item-content">
+                    <h4>Online Appointment</h4>
+                    <p>Follow the simple steps below and get your appointment fixed online! Morbi non tristique urna nunc.</p>
+                </div>
+            </div>
+
+            <div class="maintenance-item">
+                <div class="icon">
+                    <i class="fas fa-money-bill-wave"></i>
+                </div>
+                <div class="maintenance-item-content">
+                    <h4>Reasonable Prices</h4>
+                    <p>Join thousands of people who are choosing to use Best Prices Car Service to find garages convenient to them.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="maintenance-item">
+                <div class="icon">
+                    <i class="fas fa-laptop"></i>
+                </div>
+                <div class="maintenance-item-content">
+                    <h4>Diagnostics & Brake Check</h4>
+                    <p>Brakes and brake components in stock to fit your car or van. Free brake inspection available at all UK centres.</p>
+                </div>               
+            </div>
+
+            <div class="maintenance-item">
+                <div class="icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <div class="maintenance-item-content">
+                    <h4>Cutting-Edge Performance</h4>
+                    <p>We offer high quality spare parts from leading manufactures of after market parts in different type of quality.</p>
+                </div>   
+             </div>
+        </div>
+
+        <div class="col">
+            <div class="maintenance-item">
+                <div class="icon">
+                    <i class="fas fa-passport"></i>
+                </div>
+                <div class="maintenance-item-content">
+                    <h4>Certified Auto Mechanics</h4>
+                    <p>Among auto mechanics, master mechanic status comes through certification in the individual skills required for auto repair.</p>
+                </div>  
+            </div>
+
+            <div class="maintenance-item">
+                <div class="icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="maintenance-item-content">
+                    <h4>12 month Warranty on Service</h4>
+                    <p>Right price cars offer up to 12 months warranty with all vehicles sold and we are delighted to announce.</p>
+                </div>  
+            </div>
+        </div>
+    </div>
+</section>
+
         </main>
         <footer>
             <div class="wrapper">
-    <div class="col">
+    <div class="col-footer">
         <ul>
-            <li><a href="/" class="logo">DDPERFORMANCE</a></li>
+            <li><a href="/Css-Advanced-Project/" class="logo">DDPERFORMANCE</a></li>
             <li><p>Plovdiv, Bulgaria</p></li>
             <li><p>+359XXXXXXXXX</p></li>
             <li><p>random-email@gmail.com</p></li>
         </ul>
     </div>
-    <div class="col">
+    <div class="col-footer">
         <ul>
             <li><a href="#">Carreers</a></li>
             <li><a href="#">press</a></li>
             <li><a href="#">certified</a></li>
         </ul>
     </div>
-    <div class="col">
+    <div class="col-footer">
         <ul>
-            <li><a href="/contacts">Find us</a></li>
-            <li><a href="/gallery">Gallery</a></li>
-            <li><a href="/tuning">Tuning</a></li>
+            <li><a href="/Css-Advanced-Project/contacts">Find us</a></li>
+            <li><a href="/Css-Advanced-Project/gallery">Gallery</a></li>
+            <li><a href="/Css-Advanced-Project/tuning">Tuning</a></li>
         </ul>
     </div>
-    <div class="col">
+    <div class="col-footer">
         <ul>
             <li><a href="#">Cookie policy</a></li>
-            <li><a href="/tuning">Service</a></li>
+            <li><a href="/Css-Advanced-Project/tuning">Service</a></li>
             <li><a href="#">Privacy Poicy</a></li>
         </ul>
     </div>
-    <div class="col social">
+    <div class="col-footer social">
         <i class="fab fa-facebook"></i>
         <i class="fab fa-twitter"></i>
         <i class="fab fa-instagram"></i>
@@ -172,5 +243,5 @@
         </footer>
     </div>
 </body>
-<script src="/animations.js"></script>
+<script src="/Css-Advanced-Project/animations.js"></script>
 </html>

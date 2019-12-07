@@ -8,7 +8,7 @@ footer{
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    .col{
+    .col-footer{
         flex: 0 0 18%;
         @include bp(phone){
             flex: 0 0 100%;
