@@ -1,0 +1,64 @@
+form.contact{
+    textarea,
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="password"] {
+        display: block;
+        width: 100%;
+        border: 1.5px solid #CCC;
+        padding: 0.5em 0.8em;
+        border-radius: 0.3em;
+        outline: none;
+
+        &:focus {
+            border-color: #090;
+
+            & + label {
+                color: #090;
+            }
+        }
+    }
+    
+    fieldset {
+        border: 1px solid #CCC;
+        padding: 2em;
+        
+        legend {
+            padding: 0 1em;
+            font-weight: bold;
+            font-size: 1.4em;
+        }
+    }
+    .field{
+        display: flex;
+        flex-direction: column;
+        label{
+            order: 1;
+            display: block;
+        }
+        input,textarea{
+            order: 2;
+        }
+        &-submit{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            button{
+                padding: 0.5em 1.2em;
+                border-radius: 0.3em;
+                background: $background-main;
+                border: 2px solid royalblue;
+                color: white;
+                margin-top: 1em;
+                &:hover{
+                    background: white;
+                    color: royalblue;
+                }
+            }
+        }
+    }
+    .field + .field{
+        margin-top: 1em;
+    }
+}

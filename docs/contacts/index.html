@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Css Advanced Project</title>
-    <link rel="stylesheet" href="/Css-Advanced-Project/css/site.css">
+    <link rel="stylesheet" href="/css/site.css">
     <script>
         window.addEventListener('load', function () {
             document.querySelector('body').classList.add('loaded')
@@ -21,7 +21,7 @@
         <input type="checkbox" class="nav-toggle" id="nav-toggle" />
         <header>
             <div class="wrapper">
-                <a class="logo" href="/Css-Advanced-Project/">
+                <a class="logo" href="/">
     DDPerformance
 </a>
 <label for="nav-toggle" class="toggle">
@@ -32,19 +32,19 @@
     <ul>
         
         <!-- <li class="">
-            <a href="/Css-Advanced-Project/"><i class="fas fa-home"></i>Home</a>
+            <a href="/"><i class="fas fa-home"></i>Home</a>
         </li> -->
         <li class="">
-            <a href="/Css-Advanced-Project/about"><i class="far fa-address-card"></i>About</a>
+            <a href="/about"><i class="far fa-address-card"></i>About</a>
         </li>
         <li class="">
-            <a href="/Css-Advanced-Project/tuning"><i class="fas fa-tachometer-alt"></i>Tuning</a>
+            <a href="/tuning"><i class="fas fa-tachometer-alt"></i>Tuning</a>
         </li>
         <li class="">
-            <a href="/Css-Advanced-Project/gallery"><i class="far fa-images"></i>Gallery</a>
+            <a href="/gallery"><i class="far fa-images"></i>Gallery</a>
         </li>
         <li class="current-page">
-            <a href="/Css-Advanced-Project/contacts"><i class="fas fa-phone"></i>Contacts</a>
+            <a href="/contacts"><i class="fas fa-phone"></i>Contacts</a>
         </li>
 
         <!-- 
@@ -54,27 +54,27 @@
         
         
         <li class="">
-            <a href="/Css-Advanced-Project/">Home</a></li>
+            <a href="/">Home</a></li>
         
         
         
         <li class="">
-            <a href="/Css-Advanced-Project/about/">About</a></li>
+            <a href="/about/">About</a></li>
         
         
         
         <li class="">
-            <a href="/Css-Advanced-Project/tuning/">Tuning</a></li>
+            <a href="/tuning/">Tuning</a></li>
         
         
         
         <li class="">
-            <a href="/Css-Advanced-Project/gallery/">Gallery</a></li>
+            <a href="/gallery/">Gallery</a></li>
         
         
         
         <li class="current-page">
-            <a href="/Css-Advanced-Project/contacts/">Contacts</a></li>
+            <a href="/contacts/">Contacts</a></li>
         
          -->
     </ul>
@@ -82,16 +82,51 @@
             </div>
         </header>
         <main>
-            <h3>Contacts Page</h3>
+            <div class="banner-small">
+    <div class="wrapper">
+        <img src="/images/spotlight.jpg" alt="">
+        <h2>Find us</h2>
+    </div>
+</div>
+<div class="contacts">
+    <div class="wrapper">
+        <div class="info">
+            <p>We care about our customers.
+                They are our most important ambassadors and many have become personal friends.</p>
+                <p>DDPerformance, Plovdiv blv "Peshtresko shose" 32, 4002</p>
+                <p>Phone number: +359XXXXXXXXX</p>
+                <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1721.424685887466!2d24.725645212211877!3d42.140150662337824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14acd1d29a245b9f%3A0x56f69e8d8fb0d074!2z0JPQsNC30L_RgNC-0Lwg0J_Qu9C-0LLQtNC40LIg0J_QtdGJ0LXRgNGB0LrQviDRiNC-0YHQtQ!5e0!3m2!1sbg!2sbg!4v1575711632843!5m2!1sbg!2sbg" width="100%" height="450" frameborder="0" allowfullscreen=""></iframe>
+        </div>
+        <div class="find-us">
+            <p>Write to us: random-email@gmail.com</p>
+            <form class="contact" action="">
+                <fieldset>
+                    <legend>Have a question?</legend>
+                    <div class="field">
+                        <input type="email" placeholder="your-email@example.com" name="email" id="email">
+                        <label for="email">From:</label>
+                    </div>
+                    <div class="field">
+                        <textarea type="text" name="message" id="message"></textarea>
+                        <label for="message">Message:</label>
+                    </div>
+                    <div class="field-submit">
+                        <button type="submit">Send</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
         </main>
         <footer>
             <div class="wrapper">
     <div class="col">
         <ul>
-            <li><a href="/Css-Advanced-Project/" class="logo">DDPERFORMANCE</a></li>
+            <li><a href="/" class="logo">DDPERFORMANCE</a></li>
             <li><p>Plovdiv, Bulgaria</p></li>
-            <li><p>+359XXXXDDDDDDDD</p></li>
-            <li><p>your-email@example.com</p></li>
+            <li><p>+359XXXXXXXXX</p></li>
+            <li><p>random-email@gmail.com</p></li>
         </ul>
     </div>
     <div class="col">
@@ -103,15 +138,15 @@
     </div>
     <div class="col">
         <ul>
-            <li><a href="/Css-Advanced-Project/contacts">Find us</a></li>
-            <li><a href="/Css-Advanced-Project/gallery">Gallery</a></li>
-            <li><a href="/Css-Advanced-Project/tuning">Tuning</a></li>
+            <li><a href="/contacts">Find us</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/tuning">Tuning</a></li>
         </ul>
     </div>
     <div class="col">
         <ul>
             <li><a href="#">Cookie policy</a></li>
-            <li><a href="/Css-Advanced-Project/tuning">Service</a></li>
+            <li><a href="/tuning">Service</a></li>
             <li><a href="#">Privacy Poicy</a></li>
         </ul>
     </div>
@@ -126,5 +161,5 @@
         </footer>
     </div>
 </body>
-<script src="/Css-Advanced-Project/animations.js"></script>
+<script src="/animations.js"></script>
 </html>

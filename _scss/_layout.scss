@@ -86,10 +86,8 @@
     margin: 1em 0;
     box-shadow: 0 0 0.3em 0 rgba(0, 0, 0, 0.3);
     border-radius: 0.3em;
-    transition: box-shadow 0.2s ease-in-out;
 
     &:hover {
-        box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.4);
         img{
             transform: scale(1.05);
         }
@@ -113,3 +111,28 @@
     
 }
 
+.contacts .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    p{
+        padding-bottom: 0.7em;
+    }
+    .info{
+        flex: 0 0 60%;
+        padding: 1em;
+        @include bp(phone){
+            flex: 0 0 100%;
+        }
+    }
+    .find-us{
+        flex: 0 0 40%;
+        padding: 1em;
+        @include bp(phone){
+            flex: 0 0 100%;
+        }
+    }
+    .contact-map{
+        box-shadow: 0 0 0.3em 0 rgba(0, 0, 0, 0.3);
+        border-radius: 0.3em;
+    }
+}

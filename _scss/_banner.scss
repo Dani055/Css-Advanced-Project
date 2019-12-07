@@ -52,3 +52,51 @@
         transition: color 0.2s ease-in-out, transform 0.2s ease-in;;
     }
 }
+
+.banner-small{
+    min-height: 50vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    &:hover{
+        img{
+            transform: translate(-50%, -50%) scale(1.05);
+        }
+        &:before{
+            background-color: rgba($color-main, 0.5);
+        }
+        h2{
+            color: rgba(white, 1);
+        }
+    }
+
+    img{
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform-origin: center;
+        transform: translate(-50%, -50%);
+        transition: transform 0.2s ease-in-out;
+    }
+    &:before{
+        display: block;
+        content: '';
+        top: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($color-main, 0.4);
+        z-index: 2;
+        transition: background-color 0.2s ease-in-out;
+    }
+    h2{
+        z-index: 3;
+        position: relative;
+        color: rgba(white, 0.5);
+        transition: color 0.2s ease-in-out, transform 0.2s ease-in;;
+    }
+}
