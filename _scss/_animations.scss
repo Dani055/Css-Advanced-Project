@@ -77,9 +77,9 @@
 }
 .col{
     opacity: 0;
-    @for $i from 1 through 4{
+    @for $i from 3 through 4{
         &:nth-child(#{$i}){
-            animation-delay: $i * 0.1s;
+            animation-delay: $i * 0.05s;
         }
     }
 }

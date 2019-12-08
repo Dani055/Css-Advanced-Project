@@ -10,6 +10,8 @@ var isInViewport = function (elem) {
 
 var cards = document.getElementsByClassName('card-presentation')
 var cols = document.getElementsByClassName('col')
+var h4_suggestion = document.getElementById('suggestion')
+
 window.addEventListener('scroll', function (event) {
     for (let index = 0; index < cards.length; index++) {
         const card = cards[index];
@@ -32,6 +34,9 @@ window.addEventListener('scroll', function (event) {
                 col.classList.add('slide-bottom')
             }
         }
+    }
+    if(isInViewport(h4_suggestion)){
+        h4_suggestion.classList.add('slide-top')
     }
 
 }, false);
