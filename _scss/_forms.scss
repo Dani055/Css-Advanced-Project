@@ -10,7 +10,7 @@ form.contact{
         padding: 0.5em 0.8em;
         border-radius: 0.3em;
         outline: none;
-
+        transition: border 0.3s ease-in;
         &:focus {
             border-color: #090;
 
@@ -36,6 +36,7 @@ form.contact{
         label{
             order: 1;
             display: block;
+            transition: color 0.3s ease-in;
         }
         input,textarea{
             order: 2;

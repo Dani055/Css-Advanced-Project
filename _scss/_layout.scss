@@ -111,6 +111,17 @@
     @include bp(desktop){
         flex: 0 0 33.3%;
     }
+    @media (min-width: 601px) and (max-width: 1024px){
+        &:nth-child(4){
+            flex: 0 0 100%;
+            display: flex;
+            align-items: center;
+            .maintenance-item{
+                flex: 0 0 50%;
+            }
+        }
+    }
+
     .maintenance-item{
         display: flex;
         min-height: 12em;
@@ -133,11 +144,11 @@
         }
         .maintenance-item-content{
             flex: 0 0 80%;
+            p{
+                padding-bottom: 1em;
+            }
         }
         
-    }
-    .maintenance-item + .maintenance-item{
-        margin-top: 2em;
     }
 }
 
