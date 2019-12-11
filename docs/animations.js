@@ -11,7 +11,7 @@ var isInViewport = function (elem) {
 var path = window.location.pathname.split("/");
 var page = path[path.length - 2]
 
-if(page === ""){
+if(page === "" || page === "Css-Advanced-Project"){
     var cards = document.getElementsByClassName('card-presentation')
     var cols = document.getElementsByClassName('col')
     var h4_suggestion = document.getElementById('suggestion')
