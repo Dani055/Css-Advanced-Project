@@ -7,11 +7,12 @@ var isInViewport = function (elem) {
         bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
 };
+var github_url = "Css-Advanced-Project";
 
 var path = window.location.pathname.split("/");
 var page = path[path.length - 2]
 
-if(page === "" || page === "Css-Advanced-Project"){
+if(page === "" || page === github_url){
     var cards = document.getElementsByClassName('card-presentation')
     var cols = document.getElementsByClassName('col')
     var h4_suggestion = document.getElementById('suggestion')
@@ -22,7 +23,7 @@ if(page === "gallery"){
 
 
 window.addEventListener('scroll', function (event) {
-    if(page === "" || page === "Css-Advanced-Project"){
+    if(page === "" || page === github_url){
         for (let index = 0; index < cards.length; index++) {
             const card = cards[index];
             if(isInViewport(card)){
