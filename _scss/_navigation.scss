@@ -18,19 +18,21 @@ a.logo{
         border-bottom: 2px solid $color-main;
     }
 }
-header .wrapper{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 1em;
-    padding-bottom: 1em;
 
-    @include bp(phone){
-        flex-wrap: wrap;
-    }
-}
 header{
     background: $background-main;
+
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    
+        @include bp(phone){
+            flex-wrap: wrap;
+        }
+    }
 
     label{
         color: white;
@@ -61,11 +63,24 @@ header{
 }
 
 nav{
+   
     @include bp(phone){
-        display: none;
-        flex: 0 0 100%;
+	    overflow: hidden;
+        transition: max-height 0.15s ease-out;
+        background: $background-secondary;
+        max-height: 0;
+
+        position: relative;
+        margin-top: 1em;
+        margin-left: -2rem;
+        margin-right: -2rem;
+        margin-bottom: -1em;
+        
+        flex: 0 0 calc(100% + 4rem);
+
         .nav-toggle:checked + header &{
-            display: block;
+            max-height: 146px;
+            padding-bottom: 0.5em;       
         }
         li{
             margin: 1em 0 ;

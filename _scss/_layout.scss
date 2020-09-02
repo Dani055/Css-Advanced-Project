@@ -1,7 +1,15 @@
 .wrapper{
-    max-width: 80em;
     margin: 0 auto;
     padding: 0 2rem;
+    max-width: 80em;
+
+    @media (max-width: 1120px){
+        max-width: 70em;
+    }
+    @media (max-width: 910px){
+        max-width: 60em;
+    }
+   
 }
 .site{
     display: flex;
@@ -35,14 +43,37 @@
         flex: 0 0 50%;
         display: flex;
         align-items: center;
-        
+        position: relative;
+        overflow: hidden;
         @include bp(phone){
             flex: 0 0 100%;
+        }
+        @media (min-width: 601px) and (max-width: 1120px){
+            &:before{
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                filter: blur(2px) grayscale(40%) ;
+
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                background-image: url('https://i.pinimg.com/originals/1c/08/55/1c0855aab08f0667405a7afad6880787.jpg');
+            }
+            
         }
     }
 
     .card-presentation-content{
         padding: 2em;
+        @media (max-width: 910px){
+            padding: 1.4em;
+        }
         flex: 0 0 50%;
         @include bp(phone){
             flex: 0 0 100%;
