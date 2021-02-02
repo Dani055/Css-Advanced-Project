@@ -5,7 +5,7 @@ let gulp = require("gulp"),
 	csso = require("gulp-csso"),
 	size = require("gulp-size"),
 	browserSync = require('browser-sync').create(),
-	sass = require('gulp-sass'),
+	sass = require('gulp-dart-sass'),
 	cp = require("child_process");
 
 gulp.task("sass", function() {
